@@ -1,0 +1,75 @@
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  padding: 5px;
+  background-image: linear-gradient(to left, #E6A43B, transparent);
+
+  .logo-wrapper {
+    img {
+      width: 150px;
+      height: auto;
+      
+    }
+  }
+
+  .menu-wrapper {
+    .list-menu {
+      display: flex;
+      gap: 20px;
+
+      .item-menu {
+        color: #2E709E;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+        
+        
+
+        a {
+          color: #2E709E;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          transition: border-color 0.3s ease;
+          transition: 0.5s;
+
+          &:hover {
+            border-color: #E6A43B;
+            font-size: 20px;
+            transition: 0.5s;
+
+          }
+
+          &:visited {
+            color: #2E709E; // Colore del link visitato
+          }
+        }
+      }
+    }
+  }
+
+  .social-wrapper {
+    .list-social {
+      display: flex;
+      gap: 20px;
+
+      .item-social {
+        cursor: pointer;
+
+        i {
+          font-size: 24px;
+          color: #2E709E;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #E6A43B;
+          }
+        }
+      }
+    }
+  }
+}

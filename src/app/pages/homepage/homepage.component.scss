@@ -1,0 +1,217 @@
+.homepage {
+  main {
+    .content-wrapper {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+
+      .Left-content-wrapper {
+        flex: 1;
+        max-width: 50%;
+
+        .Headline-wrapper {
+          color: #2E709E;
+
+          .Headline-Title {
+            font-weight: 900;
+
+            .Drivewise {
+              width: 240px;
+              color: #E6A43B;
+              transition: 0.5s;
+
+              &:hover {
+                font-size: 50px;
+                transition: 0.5s;
+              }
+            }
+          }
+        }
+
+        .buttons {
+          display: flex;
+          gap: 30px;
+          align-items: center;
+
+          .Get-car-button {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 194px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: #E6A43B;
+            border: none;
+            color: #fff;
+            transition: width 0.5s, height 0.5s;
+
+            &:hover {
+              width: 210px;
+              height: 60px;
+              transition: 0.5s;
+            }
+          }
+
+          .Car-list-link {
+            margin-top: 0;
+            color: #2E709E;
+            text-underline-offset: 5px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .Car-logos-wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          gap: 40px;
+          width: 1500px;
+          height: 150px;
+          margin-top: 120px;
+
+          .Car-logo {
+            width: auto;
+            height: 40px;
+          }
+        }
+      }
+
+      .Car-wrapper {
+        flex: 0 0 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left, #E6A43B, transparent);
+      }
+    }
+
+    .counter-section-wrapper {
+      position: relative;
+      margin-right: auto;
+      max-width: 1000px;
+      height: 150px;
+      background-color: #E6A43B;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-content: center;
+      clip-path: polygon(0 0, 100% 0, 100% 1%, 90% 100%, 0% 100%);
+
+
+      .counter-element {
+        color: #fff;
+        width: 100px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+    }
+
+    .Deals-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: auto;
+      margin-top: 50px;
+      color: #2E709E;
+    }
+
+    .Deals-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: space-around;
+      height: 600px;
+      width: 150px;
+      width: auto;
+      height: auto;
+      margin-top: 50px;
+      overflow: visible;
+
+     
+
+      .Deal {
+        height: 400px;
+        width: 399px;
+        background-color: #2E709E;
+        border-radius: 20px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 90%, 0% 100%);
+        overflow: visible;
+       
+        
+        
+        .Description {
+          color: #fff;
+
+        }
+       
+      }
+      .Book
+      {
+        width: 133px;
+        height: 54px;
+        border-radius: 10px;
+        border: none;
+        background-color: #E6A43B;
+        color: #fff;                     
+      }
+
+    }
+    .Carousel-wrapper {
+      width: auto;
+      height: auto;
+      margin-top: 100px;
+      display: flex;
+     
+    
+      .Button-group-carousel {
+        margin-left: auto;
+        display: flex; 
+        gap: 15px; 
+        .Carouserl-car
+        {
+          .Carouserl-book-wrapper
+          {
+            .Carousel-book
+          {
+            width: 133px;
+           height: 54px;
+            border-radius: 10px;
+           border: none;
+           background-color: #E6A43B;
+           color: #fff;            
+          }
+
+          }
+          
+        }
+        .Back, .Next {
+          color: #fff;
+          border-radius: 100px;
+          width: 50px;
+          height: 50px;
+          background-color: #2E709E;
+          border: none;
+        }
+      }
+    }
+  }
+}
