@@ -26,7 +26,7 @@ export class HomepageComponent implements OnInit {
       status: 'Disponibile Ora',
       description:
         'Il Ford Transit è il furgone ideale per il trasporto di merci. Spazioso, affidabile e versatile.',
-      url: 'assets/images/cars/ford_transit.jpg',
+      url: 'assets/images/cars/ford_transit.png',
       logo: 'assets/images/cars/ford_tranist.png',
       price:100,
     },
