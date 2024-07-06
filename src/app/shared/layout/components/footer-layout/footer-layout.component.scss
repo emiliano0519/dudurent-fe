@@ -1,13 +1,12 @@
 .footer {
   display: flex;
   flex-direction: column;
-  height: 220px;
-  color: #2E709E;
+  color: #2e709e;
   .top {
     display: flex;
     justify-content: space-around;
-    background-image: linear-gradient(to left, #E6A43B, transparent);
-    padding: 1rem 1.4rem;
+    background-image: linear-gradient(to left, #e6a43b, transparent);
+    padding: 2rem;
     .col {
       display: flex;
       flex-direction: column;
@@ -18,7 +17,7 @@
         margin: 0;
         li {
           a {
-            color: #2E709E;
+            color: #2e709e;
             text-decoration: none;
           }
         }
@@ -38,6 +37,7 @@
     .left {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 5px;
       .links {
         display: flex;
@@ -56,6 +56,10 @@
             border: none;
           }
         }
+      }
+      .address-wrapper,
+      .copyright {
+        color: #ffff;
       }
     }
   }

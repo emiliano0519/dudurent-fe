@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/chroniclegame'),
+      dir: require('path').join(__dirname, './coverage/dudurent'),
       subdir: '.',
       reporters: [
         { type: 'html' },

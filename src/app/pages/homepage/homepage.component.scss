@@ -11,7 +11,6 @@
             font-weight: 900;
 
             .drivewise {
-              width: 240px;
               color: #e6a43b;
               transition: 0.5s;
 
@@ -64,7 +63,7 @@
           align-items: center;
           height: 100%;
           img {
-            width: 700px;
+            width: 500px;
           }
         }
         .bar-gradient {
@@ -138,7 +137,6 @@
       justify-content: center;
       justify-content: space-around;
       height: 600px;
-      width: 150px;
       width: auto;
       height: auto;
       margin-top: 50px;
@@ -163,6 +161,9 @@
           0% 100%
         );
         // overflow: visible;
+        img {
+          width: 316px;
+        }
 
         .description {
           color: #fff;
@@ -177,38 +178,125 @@
         color: #fff;
       }
     }
-    .carousel-wrapper {
-      width: auto;
-      height: auto;
-      margin-top: 100px;
-      display: flex;
+    
+  }
+}
 
-      .button-group-carousel {
-        margin-left: auto;
-        display: flex;
-        gap: 15px;
-        .carouserl-car {
-          .carouserl-book-wrapper {
-            .carousel-book {
-              width: 133px;
-              height: 54px;
-              border-radius: 10px;
-              border: none;
-              background-color: #e6a43b;
-              color: #fff;
-            }
-          }
-        }
-        .back,
-        .next {
-          color: #fff;
-          border-radius: 100px;
-          width: 50px;
-          height: 50px;
-          background-color: #2e709e;
-          border: none;
-        }
-      }
+/* Stili per il wrapper dei swiper */
+.sliders-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stili per il swiper principale */
+#appSwiper {
+  width: 100%;
+  max-width: 800px; /* Regola la larghezza massima del swiper principale */
+}
+
+.swiper-slide {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Stili per le miniature swiper */
+#swiperThumbs {
+  width: 100%;
+  max-width: 800px; /* Regola la larghezza massima delle miniature swiper */
+  margin-top: 20px;
+}
+
+.swiper-thumb-slide {
+  width: 80px; /* Larghezza delle miniature */
+  height: 60px; /* Altezza delle miniature */
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #eee;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: #333;
+  }
+}
+
+/* Stili per i dettagli del furgone */
+.car-item {
+  width: 100%;
+  height: 400px; /* Altezza del furgone nel swiper principale */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  cursor: pointer;
+
+  .car-details {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .car-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+    img {
+      max-width: 100px;
+      height: auto;
     }
+  }
+
+  .car-info {
+    text-align: center;
+    margin-bottom: 10px;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .btn-rent {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
+
+/* Media query per layout responsivo */
+@media (max-width: 768px) {
+  .car-item {
+    height: 300px; /* Altezza del furgone nel swiper principale su schermi più piccoli */
+  }
+
+  #swiperThumbs .swiper-thumb-slide {
+    width: 60px; /* Larghezza delle miniature su schermi più piccoli */
+    height: 40px; /* Altezza delle miniature su schermi più piccoli */
   }
 }

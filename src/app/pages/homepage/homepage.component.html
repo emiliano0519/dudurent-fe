@@ -7,15 +7,18 @@
             <div class="left-content-wrapper">
               <div class="headline-wrapper">
                 <div class="headline-Title">
-                  <h1>Explore the freedom of car rental with</h1>
-                  <h1 class="drivewise">Drivewise.</h1>
+                  <h1>Il Tuo amico di Fiducia per il </h1>
+                  <h1 class="drivewise">Noleggio Furgoni.</h1>
                 </div>
-                <p>Whether you're planning a road trip, need a reliable vehicle for a business trip, or just want the
-                  convenience of having a car at your disposal, we've got you covered.</p>
+                <p>Scopri la nostra ampia gamma di furgoni per ogni esigenza di trasporto. Che tu stia organizzando un
+                  trasloco, una
+                  consegna o un progetto speciale, Dudurent ha il veicolo perfetto per te. Noleggia in modo facile e
+                  veloce, con tariffe
+                  competitive e assistenza dedicata.</p>
               </div>
               <div class="buttons">
-                <button class="get-car-button">Get your car today</button>
-                <a href="url" class="car-list-link">See all cars →</a>
+                <button class="get-car-button">Noleggia ora</button>
+                <a href="url" class="car-list-link">Apri flotta →</a>
               </div>
 
             </div>
@@ -23,7 +26,7 @@
           <div class="col-md-6">
             <div class="right-content-wrapper">
               <div class="car-wrapper">
-                <img src="../../../assets/images/cars/red-car.png" alt="Red Car">
+                <img src="../../../assets/images/cars/furgone.png" alt="Red Car">
               </div>
               <div class="bar-gradient">
               </div>
@@ -31,6 +34,7 @@
           </div>
 
         </div>
+
         <div class="container">
           <div class="car-logos-wrapper">
             <div class="car-logo">
@@ -62,7 +66,9 @@
             </div>
           </div>
         </div>
-
+        <div>
+          <app-rent-form></app-rent-form>
+        </div>
         <div class="counter-section-wrapper">
 
           <div class="counter-element">
@@ -70,36 +76,62 @@
               450+
             </div>
             <div class="label">
-              Cars
+              Furgoni
             </div>
           </div>
-          <div class="counter-element">
+          <!-- <div class="counter-element">
             <div class="counter">
               90+
             </div>
             <div class="label">
               Sales Experts
             </div>
-          </div>
-          <div class="counter-element">
+          </div> -->
+          <!-- <div class="counter-element">
             <div class="counter">
               120+
             </div>
             <div class="label">
               Pickup Locations
             </div>
-          </div>
+          </div> -->
           <div class="counter-element">
             <div class="counter">
               4650+
             </div>
             <div class="label">
-              Happy Customers
+              Clienti soddisfatti
             </div>
           </div>
         </div>
+        <div class="sliders-wrapper">
+          <!-- Swiper principale per le auto disponibili -->
+          <swiper-container id="appSwiper" appSwiper #swiper [config]="swiperConfig" thumbs-swiper=".mySwiper2"
+            (slidechange)="slideChange($event)">
+            <swiper-slide class="swiper-slide" *ngFor="let car of cars">
+              <div class="car-item" [ngStyle]="{
+                'background-image': 'url(' + car.url + ')',
+                'background-repeat': 'no-repeat',
+                'background-size': 'cover'
+              }">
+                <div class="car-details">
+                  <div class="car-logo">
+                    <img [src]="car.logo" alt="Logo {{ car.title }}">
+                  </div>
+                  <div class="car-info">
+                    <h3>{{ car.title }}</h3>
+                    <p>{{ car.description }}</p>
+                    <p>Prezzo: €{{ car.price }} al giorno</p>
+                  </div>
+                  <button class="btn-rent">Noleggia ora</button>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+
         <div class="deals-title">
-          <h1>Best deals out there</h1>
+          <h1>I nostri migliori affari</h1>
         </div>
         <div class="deals-wrapper">
 
@@ -109,48 +141,31 @@
                 Ford focus
 
               </h1>
-              <p style="color:#E6A43B;"> From $20 </p>
+              <p style="color:#E6A43B;"> Da €20 </p>
             </div>
-            <button class="book">Book now</button>
+            <button class="book">Prenota</button>
           </div>
           <div class="deal"><img src="../../../assets/images/cars/m2.png">
             <div class="description">
               <h1>
                 Bmw m2
               </h1>
-              <p style="color:#E6A43B;"> From $80 </p>
+              <p style="color:#E6A43B;"> Da €80 </p>
             </div>
-            <button class="Book">Book now</button>
+            <button class="book">Prenota</button>
           </div>
           <div class="deal"><img src="../../../assets/images/cars/camaro.png" height="210px">
             <div class="description">
               <h1>
                 Chevrolet camaro
               </h1>
-              <p style="color:#E6A43B;"> From $120 </p>
+              <p style="color:#E6A43B;"> Da €120 </p>
             </div>
-            <button class="book">Book now</button>
+            <button class="book">Prenota</button>
           </div>
         </div>
         <div class="carousel-wrapper">
 
-          <h1>
-            Choose your next car
-          </h1>
-          <div class="button-group-carousel">
-            <button class="back"></button>
-            <button class="next"></button>
-          </div>
-          <div class="deal"> <img src="../../../assets/images/cars/red-car.png">
-            <div class="description">
-              <h1>
-                Ford focus
-
-              </h1>
-              <p style="color:#E6A43B;"> From $20 </p>
-            </div>
-            <button class="book">Book now</button>
-          </div>
         </div>
       </main>
     </div>

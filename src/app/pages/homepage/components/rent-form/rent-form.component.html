@@ -1,0 +1,41 @@
+<div class="rent-form-container">
+    <form [formGroup]="rentForm" (ngSubmit)="onSubmit()">
+        <div class="form-section">
+            <div class="form-group">
+                <label for="pickupCity">Città di ritiro</label>
+                <input id="pickupCity" formControlName="pickupCity" type="text" />
+            </div>
+            <div class="form-group">
+                <label for="pickupDate">Data ritiro</label>
+                <input id="pickupDate" formControlName="pickupDate" type="date" />
+            </div>
+            <div class="form-group">
+                <label for="pickupTime">Orario ritiro</label>
+                <input id="pickupTime" formControlName="pickupTime" type="time" />
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="dropoffCity">Città di consegna</label>
+                <input id="dropoffCity" formControlName="dropoffCity" type="text" />
+            </div>
+            <div class="form-group">
+                <label for="dropoffDate">Data consegna</label>
+                <input id="dropoffDate" formControlName="dropoffDate" type="date" />
+            </div>
+            <div class="form-group">
+                <label for="dropoffTime">Orario consegna</label>
+                <input id="dropoffTime" formControlName="dropoffTime" type="time" />
+            </div>
+        </div>
+        <div class="form-section">
+            <div class="form-group driverAge">
+                <label for="driverAge">Età del conducente</label>
+                <input id="driverAge" formControlName="driverAge" type="number" min="18" />
+            </div>
+        </div>
+        <div class="buttons-find">
+            <button class="btn-find" type="submit" [disabled]="rentForm.invalid">Cerca furgone</button>
+        </div>
+    </form>
+</div>
