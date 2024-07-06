@@ -27,7 +27,7 @@ export class HomepageComponent implements OnInit {
       description:
         'Il Ford Transit è il furgone ideale per il trasporto di merci. Spazioso, affidabile e versatile.',
       url: 'assets/images/cars/ford_transit.jpg',
-      logo: 'assets/images/cars/ford_logo.png',
+      logo: 'assets/images/cars/ford_tranist.png',
       price:100,
     },
     {
