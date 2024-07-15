@@ -27,7 +27,7 @@ export class HomepageComponent implements OnInit {
       description:
         'Il Ford Transit è il furgone ideale per il trasporto di merci. Spazioso, affidabile e versatile.',
       url: 'assets/images/cars/ford_transit.png',
-      logo: 'assets/images/cars/ford_tranist.png',
+      logo: 'assets/images/loghi macchine/Logo_ford.png',
       price:100,
     },
     {
@@ -35,8 +35,8 @@ export class HomepageComponent implements OnInit {
       status: 'Disponibile Ora',
       description:
         'Il Mercedes Sprinter offre comfort e sicurezza, perfetto per il trasporto di passeggeri o merci.',
-      url: 'assets/images/cars/mercedes_sprinter.jpg',
-      logo: 'assets/images/cars/mercedes_logo.png',
+      url: 'assets/images/cars/Mercedes_sprinter.png',
+      logo: 'assets/images/loghi macchine/Logo_mercedes.png',
       price: 100,
     },
     {
@@ -44,8 +44,8 @@ export class HomepageComponent implements OnInit {
       status: 'Disponibile Ora',
       description:
         'Il Fiat Ducato è il compagno affidabile per ogni tipo di trasporto, da piccoli a grandi carichi.',
-      url: 'assets/images/cars/fiat_ducato.jpg',
-      logo: 'assets/images/cars/fiat_logo.png',
+      url: 'assets/images/cars/ducato.png',
+      logo: 'assets/images/loghi macchine/logo_fiat.png',
       price: 100,
     },
     {
@@ -53,8 +53,8 @@ export class HomepageComponent implements OnInit {
       status: 'Disponibile Ora',
       description:
         'Il Volkswagen Crafter combina potenza e tecnologia per rendere ogni viaggio confortevole e sicuro.',
-      url: 'assets/images/cars/vw_crafter.jpg',
-      logo: 'assets/images/cars/vw_logo.png',
+      url: 'assets/images/cars/crafter.png',
+      logo: 'assets/images/loghi macchine/logo_vw.png',
       price: 100,
     },
     {
@@ -62,8 +62,8 @@ export class HomepageComponent implements OnInit {
       status: 'Disponibile Ora',
       description:
         'Il Renault Master è sinonimo di affidabilità e efficienza nel trasporto merci di ogni genere.',
-      url: 'assets/images/cars/renault_master.jpg',
-      logo: 'assets/images/cars/renault_logo.png',
+      url: 'assets/images/cars/renault_master.png',
+      logo: 'assets/images/loghi macchine/logo_renault.png',
       price: 100,
     },
   ];
