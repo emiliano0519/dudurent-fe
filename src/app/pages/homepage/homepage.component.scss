@@ -134,12 +134,12 @@
     .deals-wrapper {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      
       justify-content: space-around;
-      height: 600px;
+      margin: 2rem 0;
       width: auto;
       height: auto;
-      margin-top: 50px;
+      
       overflow: visible;
 
       .deal {
