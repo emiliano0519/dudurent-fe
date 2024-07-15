@@ -8,6 +8,7 @@ import { HomepageModule } from './pages/homepage/homepage.module';
 import { ContactsModule } from './pages/contacts/contacts.module';
 import { LoginModule } from './pages/login/login.module';
 import { RegisterModule } from './pages/register/register.module';
+import { GalleryModule } from './pages/gallery/gallery.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -17,6 +18,7 @@ import { RegisterModule } from './pages/register/register.module';
     ContactsModule,
     LoginModule,
     RegisterModule,
+    GalleryModule,
     SharedModule,
   ],
   providers: [],
