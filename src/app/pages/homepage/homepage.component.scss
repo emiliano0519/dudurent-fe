@@ -78,15 +78,17 @@
     }
     .car-logos-wrapper {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
       gap: 1rem;
-      height: 150px;
+      min-height: 150px;
+      margin: 1rem 0;
 
       .car-logo {
         width: auto;
-        height: 40px;
+        min-height: 40px;
       }
     }
 
@@ -177,10 +179,27 @@
         color: #fff;
       }
     }
-    
   }
 }
 
+@media (max-width: 768px) {
+  .homepage {
+    main {
+      .content-wrapper {
+        .left-content-wrapper {
+          padding: 1.5rem;
+        }
+        .right-content-wrapper {
+          .car-wrapper {
+            img {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 /* Stili per il wrapper dei swiper */
 .sliders-wrapper {
   display: flex;

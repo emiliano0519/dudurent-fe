@@ -46,7 +46,9 @@
       }
     }
   }
-
+  .menu-wrapper-mobile {
+    display: none;
+  }
   .social-wrapper {
     .list-social {
       display: flex;
@@ -65,6 +67,28 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+    background-color: #79a5c4;
+    .logo-wrapper {
+      img {
+        width: 100px;
+      }
+    }
+    .menu-wrapper-mobile {
+      display: block;
+      i {
+        font-size: 1.5rem;
+      }
+    }
+    .menu-wrapper,
+    .social-wrapper {
+      display: none;
     }
   }
 }
