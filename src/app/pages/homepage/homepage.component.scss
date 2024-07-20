@@ -92,38 +92,6 @@
       }
     }
 
-    .counter-section-wrapper {
-      position: relative;
-      margin-right: auto;
-      max-width: 80%;
-      height: 150px;
-      background-color: #e6a43b;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-content: center;
-      clip-path: polygon(0 0, 100% 0, 100% 1%, 90% 100%, 0% 100%);
-      padding: 0 5rem;
-
-      .counter-element {
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-
-        .counter {
-          font-size: 3rem;
-        }
-
-        .label {
-          display: flex;
-          font-size: 2rem;
-        }
-      }
-    }
-
     .deals-title {
       display: flex;
       flex-direction: row;
@@ -140,7 +108,7 @@
       margin: 2rem 0;
       width: auto;
       height: auto;
-      
+
       overflow: visible;
 
       .deal {
@@ -309,6 +277,14 @@
 
 /* Media query per layout responsivo */
 @media (max-width: 768px) {
+  .homepage {
+    main {
+      .deals-wrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  }
   .car-item {
     height: 300px; /* Altezza del furgone nel swiper principale su schermi più piccoli */
   }

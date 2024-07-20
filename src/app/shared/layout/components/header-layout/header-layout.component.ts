@@ -9,7 +9,20 @@ export class HeaderLayoutComponent implements OnInit {
 
   constructor() { }
 
+  isModalOpen: boolean = false;
+
+
   ngOnInit(): void {
+  }
+  
+  toggleModal(): void {
+    this.isModalOpen = !this.isModalOpen;
+  }
+
+  closeModal(event: Event): void {
+    if ((event.target as Element).classList.contains('modal')) {
+      this.isModalOpen = false;
+    }
   }
 
 }
