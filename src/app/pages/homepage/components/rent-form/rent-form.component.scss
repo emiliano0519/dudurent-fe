@@ -78,5 +78,16 @@
     }
   }
 }
-
-
+@media (max-width: 768px) {
+  .rent-form-container {
+    margin: 0.4rem;
+    max-width: inherit;
+    width: 100%;
+    .form-section {
+      flex-direction: column;
+      .form-group{
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
